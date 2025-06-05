@@ -1,42 +1,56 @@
 <div align="center">
-  <img src="https://img.shields.io/github/languages/count/keyvanarasteh/Project?style=flat-square&color=blueviolet" alt="Language Count">
-  <img src="https://img.shields.io/github/languages/top/keyvanarasteh/Project?style=flat-square&color=1e90ff" alt="Top Language">
-  <img src="https://img.shields.io/github/last-commit/keyvanarasteh/Project?style=flat-square&color=ff69b4" alt="Last Commit">
-  <img src="https://img.shields.io/github/license/keyvanarasteh/Project?style=flat-square&color=yellow" alt="License">
+  <img src="https://img.shields.io/github/languages/count/Crederr/Project?style=flat-square&color=blueviolet" alt="Language Count">
+  <img src="https://img.shields.io/github/languages/top/Crederr/Project?style=flat-square&color=1e90ff" alt="Top Language">
+  <img src="https://img.shields.io/github/last-commit/Crederr/Project?style=flat-square&color=ff69b4" alt="Last Commit">
+  <img src="https://img.shields.io/github/license/Crederrh/Project?style=flat-square&color=yellow" alt="License">
   <img src="https://img.shields.io/badge/Status-Active-green?style=flat-square" alt="Status">
   <img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=flat-square" alt="Contributions">
 </div>
 
-# Project Name
-*Proje Adı*
-
-A brief, engaging description of your project.  
-*Projenizin kısa ve ilgi çekici bir açıklaması.*
+# ScanMatrix
+*ScanMatrix* 
+*Bu Python tabanlı ağ güvenliği aracı, ağ tarama ve analiz süreçlerini otomatikleştiren, kapsamlı ve kullanıcı dostu bir çözümdür. Araç, açık port tarama, banner grabbing, sistem ve versiyon bilgisi toplama , CVE veritabanından güvenlik açığı tarama gibi özellikler sunar. Grafana tarzı görselleştirme ile veriler düzenli ve görsel olarak sunulurken, sistem güvenilirliğini low, medium, high, critical olarak derecelendirir. MAC adresi tespiti ve ilk 6 hanesinden hizmet türü belirleme, firewall varlığı kontrolü ve proxy listeleriyle firewall bypass yetenekleri içerir. Esnek, güvenli ve kullanıcı odaklı bu araç, ağ güvenliği analizlerini kolaylaştırır ve potansiyel tehditleri proaktif bir şekilde tespit eder..*
 
 ---
 
 ## Features / *Özellikler*
 
-- **Feature 1:** Description of the feature.  
-  *Özellik 1: Özelliğin açıklaması.*
-- **Feature 2:** Another cool thing it does.  
-  *Özellik 2: Yaptığı başka bir harika şey.*
-- **Feature 3:** One more for good measure.  
-  *Özellik 3: Ve bir tane daha.*
-- Add more as they develop.  
-  *Geliştikçe daha fazla ekleyin.*
+- **Feature 1:**  Host Keşfi
+-  *Özellik 1: *ARP Taraması: Scapy ile IP/MAC/vendor, stealth mod, ~1-2 sn.
+  Nmap Ping: Nmap -sn ile host/MAC, ~4-6 sn.
+  Sıralı Çıktı: IP’ler artan sırayla..*
+- **Feature 2:**  Port Taraması  
+  *Özellik 2: TCP SYN: Scapy, 15 port/grup, timeout 0.08/0.03 sn, ~0.4-3 sn.
+  Atlamasız: Retry=2 ile eksik port tarama.
+Sıralı: IP/port artan sırayla.*
+- **Feature 3:** Servis ve OS Tespiti.  
+  *Özellik 3: Nmap Taraması: -sV (servis), -O (OS), proxy, ~3-5 sn.
+  Veri İşleme: Servis/OS bilgisi, hata kontrolü.
+  Sıralı: IP/port/OS sıralı.
+- **Feature 4:**  Zafiyet Taraması
+- *Özellik 4:  Nmap NSE: CVE tespiti, ~5-10 sn.
+  Çıktı: Kırmızı tablo, CSV/HTML/JSON.
+  Hata Önleme: NSE hata yakalama.  
+- **Feature 5:**  Vendor Bilgileri 
+- *Özellik 5: API: macvendors.com ile vendor, ~0.1 sn.
+  Hata Yedekleme: Hata durumunda "Unknown".
+- **Feature 6:**  Çıktı ve Raporlama
+- *Özellik 6: Terminal: Yeşil/sarı bilgi, kırmızı zafiyet, cyan başlık.
+    JSON: Dosyaya yazılır (hosts, ports, vuln).
+    CSV: Host/port/OS/vuln için ayrı dosyalar.
+    HTML: Jinja2 ile biçimli rapor.
+    Topoloji: NetworkX ile PNG, ~0.5 sn.
 
 ---
 
 ## Team / *Ekip*
 
-- **219*****031** - Name Surname: *Role or Contribution*  
-  *Ad Soyad: Rolü veya Katkısı*
-- **Another Member** - Name Surname: *Role or Contribution*  
-  *Ad Soyad: Rolü veya Katkısı*
-- Add more members as needed.  
-  *Gerektiğinde daha fazla üye ekleyin.*
-
+- Member 1 - Name Surname:  
+  *Ad Soyad: Eren Ergün*
+- Member 2 - Name Surname:   
+  *Ad Soyad: Samethan Kül*
+- Member 3 - Name Surname:  
+  *Ad Soyad: İbrahim Yiğit Çetin*
 ---
 
 ## Roadmap / *Yol Haritası*
@@ -60,8 +74,8 @@ See our plans in [ROADMAP.md](ROADMAP.md).
 
 1. **Clone the Repository / *Depoyu Klonlayın***:  
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-   cd YOUR_REPO
+   [git clone https://github.com/Crederr/ScanMatrix.git]
+   cd ScanMatrix
    ```
 
 2. **Set Up Virtual Environment / *Sanal Ortam Kurulumu*** (Recommended):  
@@ -134,10 +148,14 @@ Thanks to:
 
 ## Contact / *İletişim* (Optional)
 
-Project Maintainer: [Your Name/Org Name] - [your.email@example.com]  
+[Samethan Kül] - [samethan.kul@stu.istinye.edu.tr]
+
+[Eren Ergün] - [eren.ergun@stu.istinye.edu.tr] 
+
+[İbrahim Yiğit Çetin] - [ibrahimyigit.cetin@istinye.edu.tr] 
 Found a bug? Open an issue.  
 
-*Proje Sorumlusu: [Adınız/Kuruluş Adınız] - [e-posta.adresiniz@ornek.com]. Hata bulursanız bir sorun bildirin.*
+*Proje Sorumlusu: [Eren Ergün] - [eren.ergun@stu.istinye.edu.tr]. Hata bulursanız bir sorun bildirin.*
 
 ---
 
