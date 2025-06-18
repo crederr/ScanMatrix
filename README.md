@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="https://img.shields.io/github/languages/count/Crederr/Project?style=flat-square&color=blueviolet" alt="Language Count">
-  <img src="https://img.shields.io/github/languages/top/Crederr/Project?style=flat-square&color=1e90ff" alt="Top Language">
-  <img src="https://img.shields.io/github/last-commit/Crederr/Project?style=flat-square&color=ff69b4" alt="Last Commit">
-  <img src="https://img.shields.io/github/license/Crederrh/Project?style=flat-square&color=yellow" alt="License">
+  <img src="https://img.shields.io/github/languages/count/crederr/Project?style=flat-square&color=blueviolet" alt="Language Count">
+  <img src="https://img.shields.io/github/languages/top/crederr/Project?style=flat-square&color=1e90ff" alt="Top Language">
+  <img src="https://img.shields.io/github/last-commit/crederr/Project?style=flat-square&color=ff69b4" alt="Last Commit">
+  <img src="https://img.shields.io/github/license/crederr/Project?style=flat-square&color=yellow" alt="License">
   <img src="https://img.shields.io/badge/Status-Active-green?style=flat-square" alt="Status">
   <img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=flat-square" alt="Contributions">
 </div>
@@ -97,14 +97,13 @@
 
 ---
 
-## Team / *Ekip*
+## 👥 Ekip
 
-- Member 1 - Name Surname:  
-  *Ad Soyad: Eren Ergün*
-- Member 2 - Name Surname:   
-  *Ad Soyad: Samethan Kül*
-- Member 3 - Name Surname:  
-  *Ad Soyad: İbrahim Yiğit Çetin*
+| Ad Soyad                | Rol              |
+|-------------------------|------------------|
+| Samethan Kül            | Geliştirici      |
+| Eren Ergün              | Geliştirici      |
+| İbrahim Yiğit Çetin     | Geliştirici      |
 ---
 
 ## Roadmap / *Yol Haritası*
